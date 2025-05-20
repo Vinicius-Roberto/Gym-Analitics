@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -17,68 +17,46 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-  <header id="header-aside">
-    <img id="logo" src="./assets/logo.png" alt="logo" />
-    <div id="menu-toggle-icon">&#9776;</div>
-    <nav id="buttons-header">
-      <a href="./index.html">Visão Geral</a>
-      <a href="./musculacao.html"><i class="fa-solid fa-dumbbell icon"></i>Musculação</a>
-      <a href="./hiit.html"><i class="fa-solid fa-person-running icon"></i>HIIT</a>
-      <a href="./ciclismo.html"><i class="fa-solid fa-person-biking icon"></i>Ciclismo</a>
-      <a href="./yoga.html"><i class="fa-solid fa-spa icon"></i>Yoga</a>
-      <a href="./aqua.html"><i class="fa-solid fa-person-swimming fa-flip-horizontal icon"></i>Aqua</a>
-    </nav>
-    <p class="rights">&copy; Todos os direitos reservados</p>
+  <header>
+    <img src="./assets/logo.png" alt="logo gym Analyzer" id="logo">
+    <div id="header-buttons">
+      <a href="" class="button">Fazer Análise</a>
+    </div>
   </header>
-
   <main>
-    <h1 class="title-page"><span class="menu-toggle" id="menu-toggle">&#9776;</span>Visão Geral</h1>
-    <section class="content">
-<section class="data-content fade-in">
-        <h2 class="data-title">Quantidade de Alunos por Classe</h2>
-        <p class="data-description">
-          Aqui visualizamos como os alunos estão distribuídos entre as diferentes classes disponíveis na academia.
-        </p>
-        <div class="data-table">
-          <img src="./assets/categorias total.png" alt="Gráfico de alunos por classe" />
-        </div>
-      </section>
+    <section id="sobre-nos-content">
+      <h1>Sobre Nós</h1>
+      <p>Gym Analyzer é uma plataforma inteligente que utiliza inteligência artificial para analisar a frequência dos alunos em academias. Com tecnologia de ponta, o sistema oferece relatórios precisos e insights valiosos sobre a presença dos alunos, ajudando gestores a melhorar o acompanhamento, otimizar recursos e aumentar o engajamento. Simples, eficiente e automatizado — o Gym Analyzer é a ferramenta ideal para modernizar a gestão da sua academia.</p>
+    </section>
 
-
-
-      <section class="data-content fade-in">
-        <h2 class="data-title">Comparecimento Geral</h2>
-        <p class="data-description">
-          Esse gráfico mostra o comparecimento geral dos alunos em todas as modalidades.
-        </p>
-        <div class="data-table">
-          <img src="./assets/comparecimento por categoria.png" alt="Gráfico de comparecimento por categoria" />
-        </div>
-      </section>
-
-      
-
-      <section class="data-content fade-in">
-        <h2 class="data-title">Frequência por Classe.</h2>
-        <p class="data-description">
-          Esta seção detalha a frequência de participação dos alunos em cada modalidade.
-        </p>
-        <div class="data-table">
-          <img src="./assets/frequencia categoria.png" alt="Gráfico de frequência por categoria" />
-        </div>
-      </section>
+    <section id="dados-utilizados-content">
+      <h1>Dados Utilizados</h1>
+      <p>O Gym Analyzer utiliza dados simulados de uma rede de academias canadense fictícia, disponíveis no Kaggle. O conjunto inclui informações sobre aulas, reservas e presença dos alunos. Esses dados alimentam a IA para identificar padrões de frequência e gerar insights que ajudam na gestão da academia.</p>
+      <div class="dados">
+        <img src="assets/categorias total.png" alt="">
+        <img src="assets/comparecimento por categoria.png" alt="">
+        <img src="assets/frequencia categoria.png" alt="">
+        <img src="assets/categorias total.png" alt="">
+        <img src="assets/comparecimento por categoria.png" alt="">
+        <img src="assets/frequencia categoria.png" alt="">
+        <img src="assets/categorias total.png" alt="">
+        <img src="assets/comparecimento por categoria.png" alt="">
+        <img src="assets/frequencia categoria.png" alt="">
+      </div>
     </section>
   </main>
-
-  <script src="./scripts/scripts.js"></script>
-  <script src="./scripts/local-aba.js"></script>
-  <script>
-    // JS para menu toggle no mobile
-    const toggleBtn = document.getElementById("menu-toggle-icon");
-    const navMenu = document.getElementById("buttons-header");
-    toggleBtn.addEventListener("click", () => {
-      navMenu.classList.toggle("open");
-    });
-  </script>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="./assets/logo.png" alt="logo gym Analyzer" id="logo-footer">
+        <p>Gym Analyzer</p>
+      </div>
+      <div class="footer-links">
+        <a href="#sobre-nos-content">Sobre Nós</a>
+        <a href="#dados-utilizados-content">Dados Utilizados</a>
+        <a href="">Fazer Análise</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
