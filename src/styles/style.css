@@ -22,11 +22,11 @@ header{
     align-items: center;
     background-color: #0a2540;
 
-    padding: 10px 30px;
+    padding: 10px 60px;
 }
 
 header #logo{
-    width: 80px;
+    width: 100px;
     height: auto;
 }
 
